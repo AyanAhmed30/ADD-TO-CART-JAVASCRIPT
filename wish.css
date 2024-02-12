@@ -1,0 +1,91 @@
+/* wish.css */
+body {
+    background-color: #f2f2f2;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Wish List heading styles */
+.wish-heading {
+    background-color: #333; /* Background color */
+    color: #fff; /* Text color */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease; /* Smooth color transition */
+}
+
+.wish-heading h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.wish-heading a i{
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.wish-heading a:hover {
+    color: #e74c3c; /* Change the color on hover */
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    .wish-heading {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+
+.wish-main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.wish-item {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    overflow: hidden;
+    max-width: 300px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.wish-item:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.wish-img img {
+    max-width: 100%;
+    height: auto;
+}
+
+.remove {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.remove button {
+    background-color: #f39c12;
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    margin-bottom: 7px;
+}
+
+.remove button:hover {
+    background-color: #e67e22;
+}
